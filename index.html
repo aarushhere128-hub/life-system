@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>THE SYSTEM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+        <div class="grid"></div>
+        <div class="scanline"></div>
+        <div class="particles"></div>
+    </div>
+
+    <!-- System Header -->
+    <header class="system-header">
+
+        <div class="system-title">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+
+        <div class="system-time" id="systemTime">
+            00:00:00
+        </div>
+
+    </header>
+
+
+    <!-- Main Interface -->
+    <main class="system-interface">
+
+        <!-- Player -->
+        <section class="player-panel hologram">
+
+            <div class="panel-label">
+                PLAYER STATUS
+            </div>
+
+            <div class="player-name">
+                AARUSH
+            </div>
+
+            <div class="rank">
+                <span>RANK</span>
+                <strong>C</strong>
+            </div>
+
+            <div class="level">
+                LEVEL <strong id="level">27</strong>
+            </div>
+
+            <div class="xp-container">
+
+                <div class="xp-info">
+                    <span>XP</span>
+                    <span id="xpText">8200 / 10000</span>
+                </div>
+
+                <div class="xp-bar">
+                    <div class="xp-fill" id="xpFill"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Power -->
+        <section class="power-panel hologram">
+
+            <div class="panel-label">
+                COMBAT POWER
+            </div>
+
+            <div class="power-number">
+                63
+            </div>
+
+            <div class="power-status">
+                DEVELOPING
+            </div>
+
+        </section>
+
+
+        <!-- Stats -->
+        <section class="stats-panel hologram">
+
+            <div class="panel-label">
+                ATTRIBUTES
+            </div>
+
+            <div class="stat">
+                <span>INTELLIGENCE</span>
+                <strong>62</strong>
+                <div class="stat-bar">
+                    <div style="width: 62%"></div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>STRENGTH</span>
+                <strong>41</strong>
+                <div class="stat-bar">
+                    <div style="width: 41%"></div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>DISCIPLINE</span>
+                <strong>48</strong>
+                <div class="stat-bar">
+                    <div style="width: 48%"></div>
+                </div>
+            </div>
+
+            <div class="stat">
+                <span>COMMUNICATION</span>
+                <strong>35</strong>
+                <div class="stat-bar">
+                    <div style="width: 35%"></div>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Quests -->
+        <section class="quests-panel hologram">
+
+            <div class="panel-header">
+
+                <div class="panel-label">
+                    DAILY QUESTS
+                </div>
+
+                <span class="quest-count">
+                    0 / 3
+                </span>
+
+            </div>
+
+
+            <div class="quest" data-xp="50">
+
+                <div class="quest-icon">
+                    ◇
+                </div>
+
+                <div class="quest-content">
+
+                    <strong>FOCUS STUDY</strong>
+
+                    <span>
+                        Complete one focused study session
+                    </span>
+
+                </div>
+
+                <div class="quest-reward">
+                    +50 XP
+                </div>
+
+                <button class="complete-btn">
+                    COMPLETE
+                </button>
+
+            </div>
+
+
+            <div class="quest" data-xp="60">
+
+                <div class="quest-icon">
+                    ◇
+                </div>
+
+                <div class="quest-content">
+
+                    <strong>TRAINING</strong>
+
+                    <span>
+                        Complete today's workout
+                    </span>
+
+                </div>
+
+                <div class="quest-reward">
+                    +60 XP
+                </div>
+
+                <button class="complete-btn">
+                    COMPLETE
+                </button>
+
+            </div>
+
+
+            <div class="quest" data-xp="40">
+
+                <div class="quest-icon">
+                    ◇
+                </div>
+
+                <div class="quest-content">
+
+                    <strong>SKILL DEVELOPMENT</strong>
+
+                    <span>
+                        Practice a useful skill
+                    </span>
+
+                </div>
+
+                <div class="quest-reward">
+                    +40 XP
+                </div>
+
+                <button class="complete-btn">
+                    COMPLETE
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- System Recommendation -->
+        <section class="recommendation-panel hologram">
+
+            <div class="panel-label">
+                SYSTEM RECOMMENDATION
+            </div>
+
+            <div class="recommendation-icon">
+                !
+            </div>
+
+            <div class="recommendation-text">
+
+                <strong>
+                    DEVELOPMENT OPPORTUNITY DETECTED
+                </strong>
+
+                <p>
+                    Your communication attribute has
+                    remained stagnant. The System recommends
+                    a short speaking exercise.
+                </p>
+
+            </div>
+
+            <button class="system-button">
+                ACCEPT QUEST
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Bottom Navigation -->
+    <nav class="navigation">
+
+        <button class="nav-item active">
+            <span>◇</span>
+            SYSTEM
+        </button>
+
+        <button class="nav-item">
+            <span>⚔</span>
+            QUESTS
+        </button>
+
+        <button class="nav-item">
+            <span>◈</span>
+            STATS
+        </button>
+
+        <button class="nav-item">
+            <span>◎</span>
+            GOALS
+        </button>
+
+        <button class="nav-item">
+            <span>○</span>
+            PROFILE
+        </button>
+
+    </nav>
+
+
+    <script src="app.js"></script>
+
+</body>
+</html>
