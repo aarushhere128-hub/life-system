@@ -41,7 +41,68 @@ const player = {
 
 };
 
+const testPlayer = {
 
+    STR: {
+        pushups: 20,
+        pullups: 3,
+        squats: 40,
+        plankSeconds: 60
+    },
+
+    INT: {
+        academicAccuracy: 85,
+        problemSolvingAccuracy: 80,
+        recallAccuracy: 90,
+        learningSpeed: 1
+    },
+
+    DIS: {
+        tasksPlanned: 10,
+        tasksCompleted: 8,
+        consistencyPercent: 80,
+        followThroughPercent: 85
+    },
+
+    AGI: {
+        reactionPerformance: 1,
+        balanceSeconds: 40,
+        coordinationAccuracy: 80,
+        movementPerformance: 1
+    },
+
+    VIT: {
+        endurancePerformance: 1,
+        activityConsistency: 80,
+        sleepConsistency: 80,
+        recoveryScore: 80
+    },
+
+    SKL: {
+        skillMastery: 70,
+        skillDifficulty: 60,
+        projectsCompleted: 4,
+        skillsDemonstrated: 3
+    },
+
+    CHA: {
+        speakingScore: 70,
+        writingScore: 80,
+        listeningScore: 75,
+        presentationScore: 65
+    }
+
+};
+
+
+const result =
+    ProgressionEngine.calculateProgression(
+        testPlayer
+    );
+
+console.log("===== SYSTEM PROGRESSION =====");
+
+console.log(result);
 // =========================================
 // UPDATE PLAYER UI
 // =========================================
